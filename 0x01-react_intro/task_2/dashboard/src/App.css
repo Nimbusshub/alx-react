@@ -36,3 +36,7 @@
   text-align: center;
   font-style: italic;
 }
+
+.App-body label {
+  margin: 0.2rem;
+}

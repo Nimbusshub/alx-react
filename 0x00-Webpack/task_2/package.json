@@ -2,6 +2,7 @@
   "name": "task_1",
   "version": "1.0.0",
   "main": "index.js",
+  "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
@@ -13,11 +14,12 @@
     "css-loader": "^6.7.3",
     "file-loader": "^6.2.0",
     "image-webpack-loader": "^8.1.0",
-    "jquery": "^3.6.3",
-    "lodash": "^4.17.21",
     "style-loader": "^3.3.1",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1"
   },
-  "description": ""
+  "dependencies": {
+    "jquery": "^3.6.3",
+    "lodash": "^4.17.21"
+  }
 }

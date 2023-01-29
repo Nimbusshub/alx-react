@@ -1,18 +1,33 @@
 import $ from 'jquery';
 const _ = require('lodash');
-// import { debounce } from 'lodash';
+// // import { debounce } from 'lodash';
 
-let click_count = 0;
+// let click_count = 0;
 
-$('body').append('<p>Holberton Dashboard</p>');
-$('body').append('<p>Dashboard data for the students</p>');
-$('body').append('<button>Click here to get started</button>');
-$('body').append("<p id='count'></p>");
-$('body').append('<p>Copyright - Holberton School</p>');
+// $('body').append('<p>Holberton Dashboard</p>');
+// $('body').append('<p>Dashboard data for the students</p>');
+// $('body').append('<button>Click here to get started</button>');
+// $('body').append("<p id='count'></p>");
+// $('body').append('<p>Copyright - Holberton School</p>');
+
+// function updateCounter() {
+//   click_count++;
+//   $('#count').html(`${click_count} clicks on the button`);
+// }
+
+// $('button').on('click', _.debounce(updateCounter, 100));
+
+let counter = 0;
+
+$('<p>Holberton Dashboard</p>').appendTo('body');
+$('<p>Dashboard data for the students</p>').appendTo('body');
+$('<button>Click here to get started</button>').appendTo('body');
+$("<p id='count'></p>").appendTo('body');
+$('<p>Copyright - Holberton School</p>').appendTo('body');
 
 function updateCounter() {
-  click_count++;
-  $('#count').html(`${click_count} clicks on the button`);
+  counter++;
+  $('#count').html(`${counter} clicks on the button`);
 }
 
-$('button').on('click', _.debounce(updateCounter, 100));
+$('button').on('click', _.debounce(updateCounter, 500));

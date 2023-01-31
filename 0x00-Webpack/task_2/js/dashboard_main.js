@@ -1,6 +1,6 @@
+import '../css/main.css';
 import $ from 'jquery';
 const _ = require('lodash');
-import '../css/main.css';
 
 // import { debounce } from 'lodash';
 

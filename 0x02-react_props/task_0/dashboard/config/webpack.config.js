@@ -3,7 +3,9 @@ const path = require('path');
 module.exports = {
   mode: 'development',
   devtool: 'inline-source-map',
-  entry: './src/index.js',
+  entry: {
+    main: path.resolve(__dirname, '../src/index.js'),
+  },
   output: {
     filename: 'bundle.js',
     path: path.resolve('./dist'),
@@ -26,7 +28,7 @@ module.exports = {
         loader: 'babel-loader',
       },
       {
-        test: /\.(sass|css)$/i,
+        test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
       {
